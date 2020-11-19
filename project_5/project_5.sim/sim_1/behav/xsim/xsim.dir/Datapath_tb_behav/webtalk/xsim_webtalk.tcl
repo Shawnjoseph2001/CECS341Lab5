@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /media/psf/Home/Documents/GitHub/CECS341Lab5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed Nov 18 13:29:41 2020" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Thu Nov 19 00:46:23 2020" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.2.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2729669" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "9807dd3b-23f8-4902-9d37-4d6b890b2621" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "492badede3b4491295cef8ff36086d43" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "64" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "97" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Linuxmint" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Linux Mint 20" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-4578U CPU @ 3.00GHz" -context "user_environment"
@@ -36,7 +36,7 @@ webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "52" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "15" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "1.79_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "210052_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1006626051 -regid "" -xml /media/psf/Home/Documents/GitHub/CECS341Lab5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /media/psf/Home/Documents/GitHub/CECS341Lab5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /media/psf/Home/Documents/GitHub/CECS341Lab5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "2.24_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "209916_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2482068598 -regid "" -xml /media/psf/Home/Documents/GitHub/CECS341Lab5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html /media/psf/Home/Documents/GitHub/CECS341Lab5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm /media/psf/Home/Documents/GitHub/CECS341Lab5/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/Datapath_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

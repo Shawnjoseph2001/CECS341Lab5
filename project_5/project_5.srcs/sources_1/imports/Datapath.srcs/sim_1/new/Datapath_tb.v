@@ -25,13 +25,13 @@ module Datapath_tb;
     wire [31:0]Dout;
     reg [6:0] i;
 
-    Datapath uut (.clk(clock),.reset(Reset),.DataOut(Dout));
+    Datapath uut (.clk(clock),.reset(Reset),.Dout(Dout));
         initial begin
             $readmemh("imem.dat",uut.imem.imem);
             $readmemh("regfile.dat",uut.rf32.regArray);
             $readmemh("Datamem.dat",uut.d.dmem);
-            $display("Memory values:");
-            for(i = 0; i < 5'd24; i = i + 1) begin
+            $display("Initial Memory values:");
+            for(i = 0; i < 7'd45; i = i + 1) begin
             $display("%d: %h", i, uut.d.dmem[i]);
             end
             clock = 1;
@@ -39,17 +39,17 @@ module Datapath_tb;
             #1 clock = 0;
             #1 clock = 1;
             Reset = 0;
-            for(i = 0; i < 5'd60; i = i + 1) begin
+            for(i = 0; i < 7'd52; i = i + 1) begin
             #1 clock = ~clock;
             if(~clock) begin
             $display("Time: %t, Output: %h", $time, Dout);
             end
             end
-            for(i = 0; i < 32; i = i + 1) begin
+            for(i = 0; i < 7'd32; i = i + 1) begin
             $display("Register %d: %h", i, uut.rf32.regArray[i]);
             end
-            $display("Memory values:");
-            for(i = 0; i < 5'd24; i = i + 1) begin
+            $display("Final Memory values:");
+            for(i = 0; i < 7'd45; i = i + 1) begin
             $display("%d: %h", i, uut.d.dmem[i]);
             end
         end

@@ -70,7 +70,7 @@ module Control(
     ALUCntl <= 4'b0100;
     end
     default:begin //invalid code
-    $display("Error! Check control file");
+    //$display("Error! Check control file");
     end
     endcase
     end
@@ -137,7 +137,7 @@ module Control(
     end
     6'h04:begin //beq
     RegDst <= 1'b0;
-    Branch <= 2'b10;
+    Branch <= 2'b01;
     RegWrite <= 1'b0;
     ALUCntl <= 4'b1110;
     ALUSrc <= 1'b0;
@@ -147,7 +147,7 @@ module Control(
     end
     6'h05:begin //bne
     RegDst <= 1'b0;
-    Branch <= 2'b01;
+    Branch <= 2'b10;
     RegWrite <= 1'b0;
     ALUCntl <= 4'b1110;
     ALUSrc <= 1'b0;
@@ -176,7 +176,7 @@ module Control(
     ALUSrc <= 1'b1;
     end
     default:begin
-    $display("Error! check control file");
+    //$display("Error! check control file");
     end
     endcase
     end

@@ -30,7 +30,7 @@ module Mux4x1(
     case(ctrl)
     1'b0: out <= zero;
     1'b1: out <= one;
-    default: $display("Error in Mux4x1");
+    //default: $display("Error in Mux4x1");
     endcase
     end
 endmodule

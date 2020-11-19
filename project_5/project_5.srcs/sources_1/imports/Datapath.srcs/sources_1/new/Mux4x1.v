@@ -26,10 +26,11 @@ module Mux4x1(
     input ctrl,
     output reg [4:0] out
     );
-    always @(*) begin
-    if(ctrl == 0)
-    out = zero;
-    if(ctrl == 1)
-    out = one;
+    always @(zero or one or ctrl) begin
+    case(ctrl)
+    1'b0: out <= zero;
+    1'b1: out <= one;
+    default: $display("Error in Mux4x1");
+    endcase
     end
 endmodule

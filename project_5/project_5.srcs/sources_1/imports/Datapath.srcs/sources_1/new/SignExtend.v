@@ -24,13 +24,7 @@ module SignExtend(
     input [15:0] in,
     output reg [31:0] out
     );
-    always @(*) begin
-    if(in[15] == 1) begin
-    out[31:16] = 15'h7FFF;
-    end
-    if(in[15] == 0) begin
-    out[31:16] = 15'b0;
-    end
-    out[15:0] = in;
+    always @(in) begin
+    out <= {{16{in[15]}}, in[15:0]};
     end
 endmodule

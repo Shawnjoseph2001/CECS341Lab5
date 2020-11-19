@@ -30,7 +30,10 @@ module Datapath_tb;
             $readmemh("imem.dat",uut.imem.imem);
             $readmemh("regfile.dat",uut.rf32.regArray);
             $readmemh("Datamem.dat",uut.d.dmem);
-  
+            $display("Memory values:");
+            for(i = 0; i < 5'd24; i = i + 1) begin
+            $display("%d: %h", i, uut.d.dmem[i]);
+            end
             clock = 1;
             Reset =1;
             #1 clock = 0;

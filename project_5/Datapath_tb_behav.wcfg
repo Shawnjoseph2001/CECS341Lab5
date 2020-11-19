@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="279880fs"></ZoomStartTime>
-      <ZoomEndTime time="348881fs"></ZoomEndTime>
-      <Cursor1Time time="320580fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="138801fs"></ZoomEndTime>
+      <Cursor1Time time="257670fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="34" />
+   <WVObjectSize size="36" />
    <wvobject type="logic" fp_name="/Datapath_tb/Reset">
       <obj_property name="ElementShortName">Reset</obj_property>
       <obj_property name="ObjectShortName">Reset</obj_property>
@@ -155,5 +155,13 @@
    <wvobject type="logic" fp_name="/Datapath_tb/uut/cntl/MemWrite">
       <obj_property name="ElementShortName">MemWrite</obj_property>
       <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Datapath_tb/uut/mw">
+      <obj_property name="ElementShortName">mw</obj_property>
+      <obj_property name="ObjectShortName">mw</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Datapath_tb/uut/mr">
+      <obj_property name="ElementShortName">mr</obj_property>
+      <obj_property name="ObjectShortName">mr</obj_property>
    </wvobject>
 </wave_config>

@@ -24,10 +24,7 @@ module ShiftLeftTwo(
     input [31:0] in,
     output reg [31:0] out
     );
-    reg [31:0] dout;
-    always @(*) begin
-    dout[1:0] <= 2'b0;
-    dout[31:2] <= in[29:0];
-    out = dout;
+    always @(in) begin
+    out <= in << 2;
     end
 endmodule

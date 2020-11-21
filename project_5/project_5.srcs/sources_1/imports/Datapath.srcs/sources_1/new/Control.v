@@ -176,6 +176,14 @@ module Control(
     ALUSrc <= 1'b1;
     end
     default:begin
+        Branch <= 2'b0;
+    RegWrite <= 1'b0;
+        MemWrite <= 1'b0;
+    MemRead <= 1'b0;
+    MemToReg <= 1'b0;
+    RegDst <= 1'b0;
+    ALUCntl <= 4'b0100;
+    ALUSrc <= 1'b1;
     //$display("Error! check control file");
     end
     endcase

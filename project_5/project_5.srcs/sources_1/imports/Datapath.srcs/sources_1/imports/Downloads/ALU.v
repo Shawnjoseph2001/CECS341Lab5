@@ -94,19 +94,19 @@ module ALU(
             			V = 0;
             			N = 0;
             			if(A[31] & ~B[31])
-            			ALUout = 32'hFFFFFFFF;
-            			else if(B[31] & ~A[31])
             			ALUout = 0;
+            			else if(B[31] & ~A[31])
+            			ALUout = 32'hFFFFFFFF;
             			else if(~B[31] & ~A[31])
             			begin
-            			if(A < B)
+            			if(A > B)
             			ALUout = 32'hFFFFFFFF;
             			else
             			ALUout = 0;
             			end
             			else
             			begin
-            			if(A > B)
+            			if(A < B)
             			ALUout = 32'hFFFFFFFF;
             			else
             			ALUout = 0;
@@ -116,7 +116,7 @@ module ALU(
             			C = 0;
             			V = 0;
             			N = 0;
-            			if(A < B)
+            			if(A > B)
             			ALUout = 32'hFFFFFFFF;
             			else
             			ALUout = 0;
